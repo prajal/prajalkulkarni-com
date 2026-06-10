@@ -1,0 +1,35 @@
+---
+import Base from "@layouts/Base.astro";
+import { site } from "@data/site";
+import { inlineBold } from "../lib/format";
+
+const sections = [
+  { title: "Journey", desc: "the path, and the people", href: "journey.html" },
+  { title: "Security Philosophy", desc: "how I think about it", href: "philosophy.html" },
+  { title: "Talks", desc: "community & conversations", href: "talks.html" },
+  { title: "Contact", desc: "say hello", href: "contact.html" },
+];
+---
+
+<Base title={`${site.name} — Security Leader`} current="home">
+  <div class="wrap">
+    <section class="intro">
+      <img class="portrait" src="prajal.png" alt={site.name} />
+      <p class="eyebrow">{site.role}</p>
+      <h1 class="display">{site.headline}</h1>
+      {site.intro.map((p, i) => (
+        <p class={i === 0 ? "lede measure" : "measure"} set:html={inlineBold(p)} />
+      ))}
+      <p class="companies" set:html={site.companies.map((c) => `<b>${c}</b>`).join(" &nbsp;·&nbsp; ")} />
+    </section>
+
+    <nav class="home-links" aria-label="Sections">
+      {sections.map((s) => (
+        <a class="home-link" href={s.href}>
+          <span class="home-link__title">{s.title}</span>
+          <span class="home-link__desc">{s.desc}</span>
+        </a>
+      ))}
+    </nav>
+  </div>
+</Base>

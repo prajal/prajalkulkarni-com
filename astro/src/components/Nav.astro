@@ -1,0 +1,29 @@
+---
+import { site } from "@data/site";
+
+interface Props { current?: string; }
+const { current } = Astro.props;
+
+const links = [
+  { label: "Home", href: "index.html", key: "home" },
+  { label: "Journey", href: "journey.html", key: "journey" },
+  { label: "Philosophy", href: "philosophy.html", key: "philosophy" },
+  { label: "Talks", href: "talks.html", key: "talks" },
+  { label: "Contact", href: "contact.html", key: "contact" },
+];
+---
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">{site.name}</a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        {links.map((l) => (
+          <li>
+            <a href={l.href} aria-current={current === l.key ? "page" : undefined}>{l.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

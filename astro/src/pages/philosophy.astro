@@ -1,0 +1,26 @@
+---
+import Base from "@layouts/Base.astro";
+import { principles } from "@data/principles";
+
+const pad = (n: number) => String(n + 1).padStart(2, "0");
+---
+
+<Base title="Security Philosophy — Prajal Kulkarni" description="The principles that guide how Prajal Kulkarni thinks about security: business-first, velocity-enabling, engineering-led, and built on trust." current="philosophy">
+  <div class="wrap">
+    <p class="eyebrow">Security Philosophy</p>
+    <h1 class="display">How I've come to think about security.</h1>
+    <p class="lede measure">These aren't rules so much as things I've slowly learned to believe — usually the hard way, and usually with help. They're how I try to approach the work today.</p>
+
+    <div class="principles">
+      {principles.map((p, i) => (
+        <section class="principle">
+          <p class="principle__num">{pad(i)}</p>
+          <div>
+            <h2 class="principle__title">{p.title}</h2>
+            <p class="principle__body">{p.body}</p>
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+</Base>

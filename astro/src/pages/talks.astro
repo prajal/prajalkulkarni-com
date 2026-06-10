@@ -1,0 +1,48 @@
+---
+import Base from "@layouts/Base.astro";
+import { talks, type Talk } from "@data/talks";
+
+// Group talks by year, preserving order (newest first).
+const groups: { year: string; items: Talk[] }[] = [];
+for (const t of talks) {
+  let g = groups.find((x) => x.year === t.year);
+  if (!g) { g = { year: t.year, items: [] }; groups.push(g); }
+  g.items.push(t);
+}
+---
+
+<Base title="Talks — Prajal Kulkarni" description="Talks, trainings, panels, and conversations by Prajal Kulkarni across the security community." current="talks">
+  <div class="wrap">
+    <p class="eyebrow">Talks &amp; Conversations</p>
+    <h1 class="display">A little time in the community.</h1>
+    <p class="lede measure">I don't speak as often as I once did, but I still love the community that taught me most of what I know. A few talks, trainings, and conversations over the years.</p>
+
+    <div class="talks">
+      {groups.map((g) => (
+        <div class="year-group">
+          <p class="year-group__year">{g.year}</p>
+          <div class="year-group__list">
+            {g.items.map((t) => (
+              t.href ? (
+                <a class="talk" href={t.href} target="_blank" rel="noopener">
+                  <span class="talk__main">
+                    <span class="talk__title">{t.title}</span>
+                    <span class="talk__event">{t.event}</span>
+                  </span>
+                  <span class="talk__arrow">↗</span>
+                </a>
+              ) : (
+                <div class="talk">
+                  <span class="talk__main">
+                    <span class="talk__title">{t.title}</span>
+                    <span class="talk__event">{t.event}</span>
+                  </span>
+                </div>
+              )
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>

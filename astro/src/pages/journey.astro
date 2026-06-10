@@ -1,0 +1,28 @@
+---
+import Base from "@layouts/Base.astro";
+import { journey } from "@data/journey";
+---
+
+<Base title="Journey — Prajal Kulkarni" description="The path that took Prajal Kulkarni from vulnerability assessments to leading a security organization — and the people and lessons along the way." current="journey">
+  <div class="wrap">
+    <p class="eyebrow">Journey</p>
+    <h1 class="display">The path so far.</h1>
+    <p class="lede measure">A lot of people gave me chances I hadn't earned and patience I didn't deserve. This is roughly how I went from running vulnerability scans to leading a security organization — and the people and lessons that shaped each step.</p>
+
+    <div class="timeline">
+      {journey.map((e) => (
+        <article class:list={["entry", { "entry--current": e.current }]}>
+          <p class="entry__date">{e.dates}</p>
+          <p class="entry__meta">
+            <span class="co">{e.company}</span><span class="sep">·</span>{e.role}
+          </p>
+          <h2 class="entry__role">{e.title}</h2>
+          <div class="entry__body"><p>{e.body}</p></div>
+          {e.learned && (
+            <p class="entry__learned"><span>{e.learned.label}</span>{e.learned.text}</p>
+          )}
+        </article>
+      ))}
+    </div>
+  </div>
+</Base>

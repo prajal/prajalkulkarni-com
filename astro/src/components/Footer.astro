@@ -1,0 +1,25 @@
+---
+import { site } from "@data/site";
+
+interface Props { current?: string; }
+const { current } = Astro.props;
+
+const links = [
+  { label: "Home", href: "index.html", key: "home" },
+  { label: "Journey", href: "journey.html", key: "journey" },
+  { label: "Philosophy", href: "philosophy.html", key: "philosophy" },
+  { label: "Talks", href: "talks.html", key: "talks" },
+  { label: "Contact", href: "contact.html", key: "contact" },
+];
+---
+
+<footer class="foot">
+  <div class="foot__inner">
+    <span>{site.name} · {site.location}</span>
+    <div class="foot__links">
+      {links.filter((l) => l.key !== current).map((l) => (
+        <a href={l.href}>{l.label}</a>
+      ))}
+    </div>
+  </div>
+</footer>
