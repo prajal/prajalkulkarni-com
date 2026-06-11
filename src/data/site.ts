@@ -22,6 +22,7 @@ export const site = {
       { label: "LinkedIn", href: "https://www.linkedin.com/in/prajalkulkarni/" },
       { label: "GitHub", href: "https://github.com/prajalkulkarni" },
       { label: "Email", href: "mailto:prajalkulkarni@gmail.com" },
+      { label: "Topmate", href: "https://topmate.io/prajalkulkarni/" },
     ],
   },
 } as const;
