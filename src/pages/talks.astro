@@ -42,22 +42,16 @@ const chipLabel: Record<Talk['type'], string> = {
                 <a class="talk" href={t.href} target="_blank" rel="noopener">
                   <span class="talk__main">
                     <span class="talk__title">{t.title}</span>
-                    <span class="talk__event">{t.event}</span>
+                    <span class="talk__event">{t.event} <span class:list={["chip", chipClass[t.type]]}>{chipLabel[t.type]}</span></span>
                   </span>
-                  <div class="talk__right">
-                    <span class="talk__arrow">↗</span>
-                    <span class:list={["chip", chipClass[t.type]]}>{chipLabel[t.type]}</span>
-                  </div>
+                  <span class="talk__arrow">↗</span>
                 </a>
               ) : (
                 <div class="talk">
                   <span class="talk__main">
                     <span class="talk__title">{t.title}</span>
-                    <span class="talk__event">{t.event}</span>
+                    <span class="talk__event">{t.event} <span class:list={["chip", chipClass[t.type]]}>{chipLabel[t.type]}</span></span>
                   </span>
-                  <div class="talk__right">
-                    <span class:list={["chip", chipClass[t.type]]}>{chipLabel[t.type]}</span>
-                  </div>
                 </div>
               )
             ))}
