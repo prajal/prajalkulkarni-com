@@ -53,7 +53,7 @@ export const talks: Talk[] = [
   },
   {
     year: "2020",
-    title: "ATTACKING & DEFENDING WEB APPLICATIONS ON THE INTERNET",
+    title: "Attacking & Defending web Applications on the internet",
     event: "Goa Engineering College Alumini Talk",
     href: "https://alumni.gec.ac.in/events/2462?source=eventlist",
   },
@@ -67,7 +67,7 @@ export const talks: Talk[] = [
     year: "2018",
     title: "Attack Monitoring Using Elastic Stack",
     event: "NullCon 2018 - Training",
-    href: "hhttps://nullcon.net/training/attack-monitoring-using-elastic-stack/",
+    href: "https://nullcon.net/training/attack-monitoring-using-elastic-stack/",
   },
   {
     year: "2016",

@@ -38,11 +38,11 @@ export const journey: JourneyEntry[] = [
   },
   {
     company: "Flipkart",
-    role: "Security Architect → Senior Security Architect",
+    role: "Security Engineer → Senior Security Architect",
     dates: "2014 — 2022",
     title: "Where I grew up, professionally.",
     body:
-      "Flipkart is where I really grew up as an engineer and a leader. I was a founding member of the AppSec team, and I got to watch it grow alongside an exploding number of services. We built a simple portal so developers had one place to raise security requests — which quietly triggered scans and reviews behind the scenes — baked security into everyone's OKRs, and gave engineers clear exploitability context instead of dumping thousands of findings on them. I owe a lot to the people I worked with there.",
+      "Flipkart is where I really grew up as an engineer and a leader. I joined as one of the founding members of the Application Security team and had the opportunity to help shape its evolution as the company scaled rapidly. As the engineering organization expanded, our focus shifted from finding vulnerabilities to building systems that made security easier to consume. We invested in automation, developer workflows, and clear risk context so security could scale alongside engineering rather than become a bottleneck. More than anything, Flipkart taught me that successful security programs are built through partnership. Many of the lessons that continue to shape how I think about security, engineering, and leadership came from the people I worked with there.",
     learned: {
       label: "What I learned",
       text: "If security stays the security team's problem, it never scales. The goal is to embed problem-solving into the engineers building the product.",
@@ -66,7 +66,7 @@ export const journey: JourneyEntry[] = [
   },
   {
     company: "Microland",
-    role: "Analyst — VAPT",
+    role: "Security Engineer",
     dates: "2010 — 2012",
     title: "Where it all started.",
     body:
