@@ -21,7 +21,7 @@ export const site = {
     links: [
       { label: "LinkedIn", href: "https://www.linkedin.com/in/prajalkulkarni/" },
       { label: "GitHub", href: "https://github.com/prajalkulkarni" },
-      { label: "Email", href: "mailto:hello@prajalkulkarni.com" },
+      { label: "Email", href: "mailto:prajalkulkarni@gmail.com" },
     ],
   },
 } as const;
