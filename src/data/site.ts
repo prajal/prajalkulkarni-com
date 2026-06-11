@@ -2,7 +2,6 @@
 
 export const site = {
   name: "Prajal Kulkarni",
-  role: "CISO · Groww",
   location: "Bengaluru, India",
   url: "https://prajalkulkarni.com",
   description:
