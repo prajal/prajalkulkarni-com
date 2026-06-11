@@ -34,9 +34,11 @@ export const talks: Talk[] = [
   { year: "2018", title: "Training & talk", event: "NullCon" },
   { year: "2016", title: "Security training", event: "NullCon" },
   { year: "2015", title: "Security training", event: "NullCon" },
-  { year: "2014", 
-    title: "Conference talk", 
-    event: "Confidence 2014" 
-    href:  "https://www.youtube.com/watch?v=zfxx3JG0Lx8&list=PLnKL6-WWWE_WUzBw0_dQDiP3N6I7uzSVo&index=7"},
-  { year: "2014", title: "Conference talk", event: "Grace Hopper" },
+   {
+    year: "2014",
+    title: "The tale of 100 CVE's - Confidence Kraków 2014 (Poland)",
+    event: "Confidence Kraków 2014 (Poland)",
+    href: "https://www.youtube.com/watch?v=zfxx3JG0Lx8&list=PLnKL6-WWWE_WUzBw0_dQDiP3N6I7uzSVo&index=7",
+  },
+{ year: "2014", title: "Conference talk", event: "Grace Hopper" },
 ];
