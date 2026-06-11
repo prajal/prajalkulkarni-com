@@ -19,7 +19,7 @@ const { title, description = site.description, current } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={site.url} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, site.url).href} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
