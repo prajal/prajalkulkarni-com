@@ -29,7 +29,7 @@ export const principles: Principle[] = [
   {
     title: "Remove friction; don't add gates.",
     body:
-      "At Flipkart we gave developers one place to raise security requests, automated the scans behind it, and baked security into everyone's OKRs. Whenever I can, I try to make the secure path the easy path.",
+      "At Flipkart, we gave developers a single place to request security reviews and automated much of the work behind the scenes. What surprised us wasn't the automation itself, but how quickly developers adopted it when the process became simple and predictable. That experience reinforced a belief I still hold today: people rarely resist security itself — they resist unnecessary friction. Whenever possible, I try to make the secure path the easiest path.",
   },
   {
     title: "Context matters more than severity scores.",
