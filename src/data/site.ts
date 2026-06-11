@@ -6,7 +6,7 @@ export const site = {
   location: "Bengaluru, India",
   url: "https://prajalkulkarni.com",
   description:
-    "Prajal Kulkarni — security leader and CISO at Groww. A decade building security teams, programs, and engineering-focused security practices at PayPal, Flipkart, and Groww.",
+    "Prajal Kulkarni — A security engineer at heart. A decade building security teams, programs, and engineering-focused security practices at PayPal, Flipkart, and Groww.",
   // Home page intro (first-person). Each string is a paragraph.
   // The first paragraph renders as the lede.
   intro: [
