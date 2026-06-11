@@ -134,7 +134,7 @@ p strong { color: var(--ink); }
 .home-link__desc { font-family: var(--hand); font-size: 14px; color: var(--faint); }
 
 /* ---------- journey timeline (date gutter + spine) ---------- */
-.timeline { position: relative; margin-top: 16px; padding-left: 112px; }
+.timeline { position: relative; margin-top: 16px; padding-left: 96px; }
 .timeline::before {
   content: ""; position: absolute; left: 91px; top: 8px; bottom: 8px;
   width: 1.5px; background: var(--hair);
@@ -142,12 +142,12 @@ p strong { color: var(--ink); }
 .entry { position: relative; padding-bottom: 48px; }
 .entry:last-child { padding-bottom: 0; }
 .entry__date {
-  position: absolute; left: -112px; top: 5px; width: 64px; text-align: right;
+  position: absolute; left: -96px; top: 5px; width: 64px; text-align: right;
   font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.02em;
   color: var(--faint); line-height: 1.5;
 }
 .entry::before {
-  content: ""; position: absolute; left: -26px; top: 8px;
+  content: ""; position: absolute; left: -10px; top: 8px;
   width: 11px; height: 11px; border-radius: 50%;
   background: var(--bg); border: 1.5px solid var(--faint);
 }
@@ -178,7 +178,19 @@ p strong { color: var(--ink); }
 .principle__title { font-family: var(--display); font-size: 1.55rem; font-weight: 600; letter-spacing: 0.005em; line-height: 1.08; margin: 0 0 8px; text-wrap: balance; color: var(--ink); }
 .principle__body { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.55; }
 
-/* ---------- talks ---------- */
+/* ---------- talk type chips ---------- */
+.chip {
+  display: inline-block; align-self: flex-start;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.07em;
+  text-transform: uppercase; border-radius: 5px; padding: 2px 8px;
+  border: 1px solid var(--hair); color: var(--faint); background: #f9f8f6;
+  margin-top: 5px;
+}
+.chip--talk     { border-color: #fde8c8; color: #b85c00; background: #fff8f0; }
+.chip--panel    { border-color: #c8d9fd; color: #2f6df6; background: #f0f4ff; }
+.chip--podcast  { border-color: #c9ead9; color: #1a7a4a; background: #f0faf4; }
+.chip--training { border-color: #e4d8fd; color: #6b3db8; background: #f7f2ff; }
+.chip--review   { border-color: #fde0e0; color: #b82020; background: #fff5f5; }
 .year-group { display: grid; grid-template-columns: 64px 1fr; gap: 8px; margin-bottom: 32px; }
 .year-group__year { font-family: var(--display); font-size: 1.55rem; font-weight: 600; color: var(--faint); padding-top: 12px; line-height: 1; }
 .talk {

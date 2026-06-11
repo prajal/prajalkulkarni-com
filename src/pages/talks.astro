@@ -9,13 +9,28 @@ for (const t of talks) {
   if (!g) { g = { year: t.year, items: [] }; groups.push(g); }
   g.items.push(t);
 }
+
+const chipClass: Record<Talk['type'], string> = {
+  talk:     'chip--talk',
+  panel:    'chip--panel',
+  podcast:  'chip--podcast',
+  training: 'chip--training',
+  review:   'chip--review',
+};
+const chipLabel: Record<Talk['type'], string> = {
+  talk:     'Talk',
+  panel:    'Panel',
+  podcast:  'Podcast',
+  training: 'Training',
+  review:   'Review board',
+};
 ---
 
-<Base title="Talks — Prajal Kulkarni" description="Talks, trainings, panels, and conversations by Prajal Kulkarni across the security community." current="talks">
+<Base title="Talks — Prajal Kulkarni" description="Talks, trainings, panels, review boards, and conversations by Prajal Kulkarni across the security community." current="talks">
   <div class="wrap">
     <p class="eyebrow">Talks &amp; Conversations</p>
     <h1 class="display">A little time in the community.</h1>
-    <p class="lede measure">I don't speak as often as I once did, but I still love the community that taught me most of what I know. A few talks, trainings, and conversations over the years.</p>
+    <p class="lede measure">I don't speak as often as I once did, but I still love the community that taught me most of what I know. A few talks, trainings, panels, and conversations over the years.</p>
 
     <div class="talks">
       {groups.map((g) => (
@@ -28,6 +43,7 @@ for (const t of talks) {
                   <span class="talk__main">
                     <span class="talk__title">{t.title}</span>
                     <span class="talk__event">{t.event}</span>
+                    <span class:list={["chip", chipClass[t.type]]}>{chipLabel[t.type]}</span>
                   </span>
                   <span class="talk__arrow">↗</span>
                 </a>
@@ -36,6 +52,7 @@ for (const t of talks) {
                   <span class="talk__main">
                     <span class="talk__title">{t.title}</span>
                     <span class="talk__event">{t.event}</span>
+                    <span class:list={["chip", chipClass[t.type]]}>{chipLabel[t.type]}</span>
                   </span>
                 </div>
               )
@@ -46,3 +63,4 @@ for (const t of talks) {
     </div>
   </div>
 </Base>
+
