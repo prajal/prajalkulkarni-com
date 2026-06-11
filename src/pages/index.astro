@@ -15,7 +15,6 @@ const sections = [
   <div class="wrap">
     <section class="intro">
       <img class="portrait" src="prajal.png" alt={site.name} />
-      <p class="eyebrow">{site.role}</p>
       <h1 class="display">{site.headline}</h1>
       {site.intro.map((p, i) => (
         <p class={i === 0 ? "lede measure" : "measure"} set:html={inlineBold(p)} />
