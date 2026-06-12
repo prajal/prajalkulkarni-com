@@ -134,20 +134,20 @@ p strong { color: var(--ink); }
 .home-link__desc { font-family: var(--hand); font-size: 14px; color: var(--faint); }
 
 /* ---------- journey timeline (date gutter + spine) ---------- */
-.timeline { position: relative; margin-top: 16px; padding-left: 130px; }
+.timeline { position: relative; margin-top: 16px; padding-left: 150px; }
 .timeline::before {
-  content: ""; position: absolute; left: 118px; top: 8px; bottom: 8px;
+  content: ""; position: absolute; left: 123px; top: 8px; bottom: 8px;
   width: 1.5px; background: var(--hair);
 }
 .entry { position: relative; padding-bottom: 48px; }
 .entry:last-child { padding-bottom: 0; }
 .entry__date {
-  position: absolute; left: -130px; top: 5px; width: 90px; text-align: right;
+  position: absolute; left: -150px; top: 5px; width: 96px; text-align: right;
   font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.02em;
   color: var(--faint); line-height: 1.5;
 }
 .entry::before {
-  content: ""; position: absolute; left: -18px; top: 8px;
+  content: ""; position: absolute; left: -33px; top: 8px;
   width: 11px; height: 11px; border-radius: 50%;
   background: var(--bg); border: 1.5px solid var(--faint);
 }
