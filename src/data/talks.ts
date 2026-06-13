@@ -26,6 +26,13 @@ export const talks: Talk[] = [
   },
   {
     year: "2025",
+    title: "Government Policies & Cybersecurity: Safeguarding India's Digital Future",
+    event: "Startupmahakumbh",
+    type: "panel",
+    href: "https://startupmahakumbh.org/speakers-2025.php#spk1",
+  },
+  {
+    year: "2025",
     title: "Modernizing Security Architecture: Platforms or Best-of-Breed, What Works?",
     event: "NullCon 2025",
     type: "talk",
