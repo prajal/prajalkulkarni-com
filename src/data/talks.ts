@@ -33,6 +33,13 @@ export const talks: Talk[] = [
   },
   {
     year: "2025",
+    title: "DevSecOps to DevSecAI: The Next Shift in Application Security",
+    event: "OwaspAppsecDays Bangalore",
+    type: "panel",
+    href: "https://owaspappsecdaysbangaloreoct.sched.com/event/28vKL/devsecops-to-devsecai-the-next-shift-in-application-security-ciso-panel-3",
+  },
+  {
+    year: "2025",
     title: "Modernizing Security Architecture: Platforms or Best-of-Breed, What Works?",
     event: "NullCon 2025",
     type: "talk",
