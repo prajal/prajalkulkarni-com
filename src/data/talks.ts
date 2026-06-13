@@ -46,6 +46,13 @@ export const talks: Talk[] = [
     href: "https://www.youtube.com/watch?v=GyQNbrZNrdg",
   },
   {
+    year: "2024",
+    title: "BsidesGoa CFP Review Panel",
+    event: "BsidesGoa 2024",
+    type: "review",
+    href: "https://www.bsidesgoa.in/cfp-review-panel",
+  }
+  {
     year: "2023",
     title: "Bsides Bangalore CFP Review board",
     event: "Bsides Bangalore",
