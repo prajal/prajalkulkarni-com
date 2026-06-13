@@ -51,7 +51,7 @@ export const talks: Talk[] = [
     event: "BsidesGoa 2024",
     type: "review",
     href: "https://www.bsidesgoa.in/cfp-review-panel",
-  }
+  },
   {
     year: "2023",
     title: "Bsides Bangalore CFP Review board",
