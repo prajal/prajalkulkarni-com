@@ -115,6 +115,13 @@ export const talks: Talk[] = [
     type: "training",
     href: "https://nullcon.net/training/attack-monitoring-using-elasticsearch-logstash-kibana/",
   },
+{
+    year: "2016",
+    title: "Attack monitoring using ELK stack - NullBachaav",
+    event: "Null Bachaav session ",
+    type: "training",
+    href: "https://null.community/events/190-bangalore-attack-monitoring-using-elasticsearch-logstash-kibana",
+  },
   {
     year: "2015",
     title: "Attack Monitoring using Elasticsearch, Logstash, Kibana",
