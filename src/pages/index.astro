@@ -14,7 +14,10 @@ const sections = [
 <Base title={`${site.name} — Security Through Engineering`} current="home">
   <div class="wrap">
     <section class="intro">
-      <img class="portrait" src="prajal.png" alt={site.name} />
+      <picture>
+        <source srcset="prajal.webp" type="image/webp" />
+        <img class="portrait" src="prajal.png" alt={site.name} width="100" height="100" fetchpriority="high" />
+      </picture>
       <h1 class="display">{site.headline}</h1>
       {site.intro.map((p, i) => (
         <p class={i === 0 ? "lede measure" : "measure"} set:html={inlineBold(p)} />
