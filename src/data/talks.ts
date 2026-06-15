@@ -42,7 +42,7 @@ export const talks: Talk[] = [
     year: "2025",
     title: "Modernizing Security Architecture: Platforms or Best-of-Breed, What Works?",
     event: "NullCon 2025",
-    type: "talk",
+    type: "panel",
     href: "https://www.youtube.com/watch?v=GyQNbrZNrdg",
   },
   {
