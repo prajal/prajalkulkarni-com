@@ -70,7 +70,7 @@ const chipLabel: Record<Talk['type'], string> = {
   </div>
 </Base>
 
-<script>
+<script is:inline>
 function filterTalks(type, el) {
   document.querySelectorAll('.talks-tab').forEach(t => {
     t.classList.remove('active');
