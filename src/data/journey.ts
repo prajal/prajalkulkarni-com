@@ -12,6 +12,7 @@ export interface JourneyEntry {
     highlights?: string[];
     tools?: { label: string; href: string }[];
     writing?: { label: string; href: string }[];
+    writingLabel?: string;
   };
 }
 
@@ -123,6 +124,12 @@ export const journey: JourneyEntry[] = [
     dates: "2013",
     title: "Reading systems before securing them.",
     body: "A brief but formative stop, working on core security as an engineer. It taught me to read and understand systems carefully before trying to secure them — a habit I'm still grateful for.",
+    artifacts: {
+      writing: [
+        { label: "The tale of 100 CVEs", href: "https://codevigilant.com/author/prajalkulkarni/" },
+      ],
+      writingLabel: "Research",
+    },
   },
   {
     company: "Microland",
@@ -141,6 +148,10 @@ export const journey: JourneyEntry[] = [
         "Foundations in troubleshooting and operational excellence",
         "Early understanding of security from an infrastructure perspective",
       ],
+      writing: [
+        { label: "GLPI 0.83.3 Security vulnerabilities", href: "https://www.tenable.com/plugins/nessus/61416" },
+      ],
+      writingLabel: "Research",
     },
   },
 ];

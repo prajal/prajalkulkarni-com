@@ -9,7 +9,7 @@ export const principles: Principle[] = [
   {
     title: "Security is a business function first.",
     body:
-      "Before I try to secure anything, I try to understand how the business creates value. Every company has its own DNA — the products, systems, and processes that matter most. Once you understand what the business depends on, it becomes much easier to understand what an adversary would target and where security efforts will have the greatest impact. Good security starts with understanding the business, not the technology.",
+      "Before I try to secure anything, I try to understand the organic business function of the company — its DNA. Once you know what an adversary would actually go after, you know what to protect first.",
   },
   {
     title: "Security should enable velocity.",
@@ -29,12 +29,12 @@ export const principles: Principle[] = [
   {
     title: "Remove friction; don't add gates.",
     body:
-      "At Flipkart, we gave developers a single place to request security reviews and automated much of the work behind the scenes. What surprised us wasn't the automation itself, but how quickly developers adopted it when the process became simple and predictable. That experience reinforced a belief I still hold today: people rarely resist security itself — they resist unnecessary friction.",
+      "At Flipkart we gave developers one place to raise security requests, automated the scans behind it, and baked security into everyone's OKRs. Whenever I can, I try to make the secure path the easy path.",
   },
   {
     title: "Context matters more than severity scores.",
     body:
-      "Dropping thousands of vulnerabilities on a team rarely changes behavior. Providing clear context — how a specific issue could be exploited and what impact it could have — does. People don't act on numbers. They act on understanding. Good security helps teams see why something matters, not just that it exists.",
+      "Dropping thousands of vulnerabilities on a team rarely works. Giving clear exploitability context — how this specific flaw could actually lead to a breach — does. It turns a number into a reason.",
   },
   {
     title: "When starting from zero, start simple.",

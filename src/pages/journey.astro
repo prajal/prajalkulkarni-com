@@ -48,7 +48,7 @@ import { journey } from "@data/journey";
                 )}
                 {e.artifacts.writing && e.artifacts.writing.length > 0 && (
                   <div class="artifacts-sub">
-                    <p class="artifacts-sub__lbl">Writing</p>
+                    <p class="artifacts-sub__lbl">{e.artifacts.writingLabel ?? "Writing"}</p>
                     <div class="artifacts-pills">
                       {e.artifacts.writing.map(w => (
                         <a class="pill" href={w.href} target="_blank" rel="noopener">{w.label} <span class="pill__arr">↗</span></a>
