@@ -169,7 +169,48 @@ p strong { color: var(--ink); }
 }
 .entry__learned span { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); display: block; margin-bottom: 5px; }
 
-/* ---------- philosophy (card grid) ---------- */
+/* ---------- journey artifacts accordion ---------- */
+.artifacts-toggle {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 12px; padding: 0;
+  background: none; border: none; cursor: pointer; width: 100%; text-align: left;
+  font-family: var(--hand); font-size: .95rem; color: var(--faint);
+}
+.artifacts-toggle:hover { color: var(--ink); }
+.artifacts-toggle:hover .artifacts-toggle__icon { border-color: var(--accent); color: var(--accent); }
+.artifacts-toggle__icon {
+  width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid var(--hair);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--mono); font-size: 13px; color: var(--faint);
+  flex: 0 0 auto; line-height: 1; transition: border-color .15s, color .15s;
+}
+.artifacts-toggle__label { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.artifacts-content {
+  display: none; margin-top: 14px; padding-top: 14px;
+  border-top: 1px solid var(--hair-soft);
+}
+.artifacts-content.open { display: block; }
+.artifacts-sub { margin-bottom: 14px; }
+.artifacts-sub:last-child { margin-bottom: 0; }
+.artifacts-sub__lbl {
+  font-family: var(--mono); font-size: 10px; color: var(--faint);
+  letter-spacing: .1em; text-transform: uppercase; margin: 0 0 8px;
+}
+.artifacts-bullets { list-style: none; margin: 0 0 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.artifacts-bullets li { font-size: .95rem; color: var(--muted); display: flex; align-items: baseline; gap: 7px; line-height: 1.4; }
+.artifacts-bullets li::before { content: "·"; font-family: var(--mono); font-size: 14px; color: var(--faint); flex: 0 0 auto; }
+.artifacts-pills { display: flex; flex-wrap: wrap; gap: 8px; width: 100%; }
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border: 1px solid var(--hair); border-radius: 20px;
+  font-size: .88rem; color: var(--muted); text-decoration: none;
+  transition: border-color .15s, color .15s;
+}
+.pill:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.pill__arr { font-family: var(--mono); font-size: 10px; color: var(--faint); }
+.pill:hover .pill__arr { color: var(--accent); }
+.pill--tool { border-color: color-mix(in srgb, var(--accent) 25%, var(--hair)); }
+.pill--tool:hover { background: var(--accent-soft); }
 .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px; }
 .principle {
   display: block; border: 1px solid var(--hair); border-radius: 14px;
@@ -187,7 +228,7 @@ p strong { color: var(--ink); }
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.07em;
   text-transform: uppercase; border-radius: 5px; padding: 2px 8px;
   border: 1px solid var(--hair); color: var(--faint); background: #f9f8f6;
-  margin-top: 5px;
+  margin-top: 0; white-space: nowrap; flex-shrink: 0;
 }
 .chip--talk     { border-color: #fde8c8; color: #b85c00; background: #fff8f0; }
 .chip--panel    { border-color: #c8d9fd; color: #2f6df6; background: #f0f4ff; }

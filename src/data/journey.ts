@@ -5,9 +5,14 @@ export interface JourneyEntry {
   role: string;
   dates: string;
   current?: boolean;
-  title: string;       // short, human heading for the entry
-  body: string;        // first-person summary
+  title: string;
+  body: string;
   learned?: { label: string; text: string };
+  artifacts?: {
+    highlights?: string[];
+    tools?: { label: string; href: string }[];
+    writing?: { label: string; href: string }[];
+  };
 }
 
 export const journey: JourneyEntry[] = [
@@ -22,6 +27,19 @@ export const journey: JourneyEntry[] = [
     learned: {
       label: "What I keep learning",
       text: "Security is a business function before it's a technical one. Understand the company's DNA first, then protect what an adversary would actually go after.",
+    },
+    artifacts: {
+      tools: [
+        { label: "Appollo", href: "https://github.com/Groww-OSS/Appollo" },
+        { label: "Hela", href: "https://github.com/Groww-OSS/hela" },
+        { label: "SecretLens", href: "https://github.com/Groww-OSS/SecretLens" },
+      ],
+      writing: [
+        { label: "Securing at speed: scaling vulnerability management", href: "https://tech.groww.in/securing-at-speed-how-groww-scales-vulnerability-management-f2ddfb9841a5" },
+        { label: "Beyond the checkbox: scaling product security across Groww's SDLC", href: "https://tech.groww.in/beyond-the-checkbox-scaling-product-security-across-growws-sdlc-e5cd3d70a3be" },
+        { label: "Not just OWASP: deep dive into Groww's API security playbook", href: "https://tech.groww.in/not-just-owasp-deep-dive-into-growws-api-security-playbook-ab5e74ef1cb8" },
+        { label: "Beyond perimeter: introducing Appollo for real-time attack surface detection", href: "https://tech.groww.in/beyond-perimeter-introducing-appollo-for-real-time-attack-surface-detection-777092b6be2e" },
+      ],
     },
   },
   {
@@ -46,6 +64,22 @@ export const journey: JourneyEntry[] = [
     learned: {
       label: "What I learned",
       text: "If security stays the security team's problem, it never scales. The goal is to embed problem-solving into the engineers building the product.",
+    },
+    artifacts: {
+      highlights: [
+        "One of the earliest AppSec functions at scale in India",
+        "Developer-centric security workflows embedded into engineering",
+        "Security embedded into OKRs across teams",
+      ],
+      tools: [
+        { label: "Astra", href: "https://github.com/flipkart-incubator/Astra" },
+        { label: "Watchdog", href: "https://github.com/flipkart-incubator/watchdog" },
+        { label: "RTA", href: "https://github.com/flipkart-incubator/RTA" },
+      ],
+      writing: [
+        { label: "How Flipkart reacts to security vulnerabilities", href: "https://blog.flipkart.tech/how-flipkart-reacts-to-security-vulnerabilities-17dae9b0661e" },
+        { label: "Securing the billion-dollar app", href: "https://blog.flipkart.tech/securing-the-billion-dollar-app-417d5af1f0de" },
+      ],
     },
   },
   {

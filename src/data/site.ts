@@ -10,7 +10,7 @@ export const site = {
   // The first paragraph renders as the lede.
   intro: [
     "Over the last 16 years I've worked across application, cloud, infrastructure, and detection security — but mostly I've been lucky to work alongside some of the brightest people in the field, and I've learned a great deal from them.",
-    "Along the way I've had the chance to help build and lead security at **PayPal**, **Flipkart**, and now **Groww**, where I'm Chief Information Security Officer. I care about security that enables velocity, treats engineers as partners, and earns trust by being reliable.",
+    "Along the way I've had the chance to help build and lead security at **PayPal**, **Flipkart**, and now **Groww**, where I'm Chief Information Security Officer. I care about security that enables velocity, treats engineers as partners, and earns trust by being reliable. Lately, I have been exploring how AI will reshape security engineering and operations. If you find this space interesting, let's connect and chat!",
   ],
   headline: "Hi, I'm Prajal. I help build security teams and programs that scale",
   companies: ["PayPal", "Flipkart", "Cleartrip", "Groww"],

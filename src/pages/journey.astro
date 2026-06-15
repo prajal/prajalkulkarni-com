@@ -19,7 +19,45 @@ import { journey } from "@data/journey";
           <h2 class="entry__role">{e.title}</h2>
           <div class="entry__body"><p>{e.body}</p></div>
           {e.learned && (
-            <p class="entry__learned"><span>{e.learned.label}</span>{e.learned.text}</p>
+            <div class="entry__learned"><span>{e.learned.label}</span>{e.learned.text}</div>
+          )}
+          {e.artifacts && (
+            <>
+              <button class="artifacts-toggle" onclick="var c=this.nextElementSibling;var open=c.classList.toggle('open');this.querySelector('.artifacts-toggle__icon').textContent=open?'−':'+';">
+                <span class="artifacts-toggle__icon">+</span>
+                <span class="artifacts-toggle__label">What we built</span>
+              </button>
+              <div class="artifacts-content">
+                {e.artifacts.highlights && e.artifacts.highlights.length > 0 && (
+                  <div class="artifacts-sub">
+                    <p class="artifacts-sub__lbl">Highlights</p>
+                    <ul class="artifacts-bullets">
+                      {e.artifacts.highlights.map(h => <li>{h}</li>)}
+                    </ul>
+                  </div>
+                )}
+                {e.artifacts.tools && e.artifacts.tools.length > 0 && (
+                  <div class="artifacts-sub">
+                    <p class="artifacts-sub__lbl">Open source tools</p>
+                    <div class="artifacts-pills">
+                      {e.artifacts.tools.map(t => (
+                        <a class="pill pill--tool" href={t.href} target="_blank" rel="noopener">{t.label} <span class="pill__arr">↗</span></a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {e.artifacts.writing && e.artifacts.writing.length > 0 && (
+                  <div class="artifacts-sub">
+                    <p class="artifacts-sub__lbl">Writing</p>
+                    <div class="artifacts-pills">
+                      {e.artifacts.writing.map(w => (
+                        <a class="pill" href={w.href} target="_blank" rel="noopener">{w.label} <span class="pill__arr">↗</span></a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </>
           )}
         </article>
       ))}
