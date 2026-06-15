@@ -172,14 +172,17 @@ p strong { color: var(--ink); }
 /* ---------- journey artifacts accordion ---------- */
 .artifacts-toggle {
   display: flex; align-items: center; gap: 10px;
-  margin-top: 12px; padding: 0;
-  background: none; border: none; cursor: pointer; width: 100%; text-align: left;
-  font-family: var(--hand); font-size: .95rem; color: var(--faint);
+  margin-top: 14px; padding: 11px 14px;
+  background: var(--hair-soft); border: 1.5px solid var(--hair);
+  border-radius: 8px; cursor: pointer; width: 100%; text-align: left;
+  font-family: var(--hand); font-size: .95rem; color: var(--muted);
+  transition: border-color .15s, background .15s;
 }
-.artifacts-toggle:hover { color: var(--ink); }
-.artifacts-toggle:hover .artifacts-toggle__icon { border-color: var(--accent); color: var(--accent); }
+.artifacts-toggle:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+.artifacts-toggle:hover .artifacts-toggle__icon { border-color: var(--accent); color: var(--accent); background: #fff; }
 .artifacts-toggle__icon {
   width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid var(--hair);
+  background: #fff;
   display: flex; align-items: center; justify-content: center;
   font-family: var(--mono); font-size: 13px; color: var(--faint);
   flex: 0 0 auto; line-height: 1; transition: border-color .15s, color .15s;

@@ -29,6 +29,12 @@ export const journey: JourneyEntry[] = [
       text: "Security is a business function before it's a technical one. Understand the company's DNA first, then protect what an adversary would actually go after.",
     },
     artifacts: {
+      highlights: [
+        "Security organization spanning multiple security domains",
+        "Security programs designed to scale with business growth",
+        "Developer-focused security platforms and automation",
+        "Security integrated into engineering and business decision-making",
+      ],
       tools: [
         { label: "Appollo", href: "https://github.com/Groww-OSS/Appollo" },
         { label: "Hela", href: "https://github.com/Groww-OSS/hela" },
@@ -51,11 +57,17 @@ export const journey: JourneyEntry[] = [
       "Cleartrip was where I first owned security strategy from end to end — setting up the function, writing the policies, running the security council, and being the person business teams came to with their hardest questions. It taught me how much of leadership is simply translation: turning risk into language that leaders can actually act on.",
     learned: {
       label: "What I learned",
-      text: "You can't always keep pace with the business. The job is to balance what's needed against what the business can absorb — and to communicate the trade-offs honestly.",
+      text: "Smaller teams teach you to be pragmatic. You don't always have the luxury of specialists, which means solving problems across disciplines and focusing on what creates the most impact with the least complexity.",
     },
-  },
-  {
-    company: "Flipkart",
+    artifacts: {
+      highlights: [
+        "Security foundations for a fast-moving product organization",
+        "Early application security and secure development practices",
+        "Security reviews embedded into product delivery",
+        "Cross-functional ownership of security initiatives",
+        "Built a BISO function to embed security partnership directly within business and product teams",
+      ],
+    },
     role: "Security Engineer → Senior Security Architect",
     dates: "2014 — 2022",
     title: "Where I grew up, professionally.",
@@ -89,6 +101,22 @@ export const journey: JourneyEntry[] = [
     title: "Learning what trust really costs.",
     body:
       "At PayPal I worked on the security of digital and mobile payments. Handling people's money raised the bar on everything, and it's where I first understood what user trust actually costs — and why it's worth protecting carefully.",
+    learned: {
+      label: "What I learned",
+      text: "If you want security to matter, you need to understand what the business actually depends on. The closer security gets to customers, money, and trust, the easier it becomes to prioritize what truly matters.",
+    },
+    artifacts: {
+      highlights: [
+        "Security controls and processes at global scale",
+        "Security deeply integrated into product development",
+        "Risk-driven approaches to protecting customer trust",
+        "Exposure to operating security in a highly regulated environment",
+      ],
+      writing: [
+        { label: "The tale of 100 CVEs", href: "https://www.slideshare.net/slideshow/the-tale-of-100-cves/35253566" },
+        { label: "Code Vigilant", href: "https://codevigilant.com/" },
+      ],
+    },
   },
   {
     company: "PwC",
@@ -105,5 +133,17 @@ export const journey: JourneyEntry[] = [
     title: "Where it all started.",
     body:
       "Where I began — vulnerability assessment and penetration testing. Long nights, a lot of curiosity, and the first people who were generous enough to teach a beginner how any of this worked.",
+    learned: {
+      label: "What I learned",
+      text: "The best way to learn security is to learn technology first. Understanding infrastructure, operations, and how systems actually work provides a foundation that stays useful throughout your career.",
+    },
+    artifacts: {
+      highlights: [
+        "Exposure to enterprise infrastructure and operations",
+        "Hands-on experience across networks, systems, and security",
+        "Foundations in troubleshooting and operational excellence",
+        "Early understanding of security from an infrastructure perspective",
+      ],
+    },
   },
 ];
