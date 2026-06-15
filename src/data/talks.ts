@@ -21,7 +21,7 @@ export const talks: Talk[] = [
     year: "2025",
     title: "Scaling Security in Fintech: Building Secure Products at Startup Speed",
     event: "VULNCON 2025",
-    type: "podcast",
+    type: "panel",
     href: "https://blog.vulncon.in/scaling-security-in-fintech-building-secure-products-at-startup-speed/",
   },
   {
