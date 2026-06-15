@@ -103,6 +103,13 @@ export const talks: Talk[] = [
   },
   {
     year: "2018",
+    title: "The Evolution of Application Security in E-Commerce",
+    event: "SlashN Flipkart",
+    type: "talk",
+    href: "https://www.youtube.com/watch?v=sQD5aEBizxw",
+  },
+  {
+    year: "2018",
     title: "Building a Real-World Attack Monitoring Solution with the ELK Stack",
     event: "c0c0n 2018",
     type: "training",
