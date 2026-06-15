@@ -74,16 +74,16 @@ const chipLabel: Record<Talk['type'], string> = {
 function filterTalks(type, el) {
   document.querySelectorAll('.talks-tab').forEach(t => {
     t.classList.remove('active');
-    t.setAttribute('aria-selected','false');
+    t.setAttribute('aria-selected', 'false');
   });
   el.classList.add('active');
-  el.setAttribute('aria-selected','true');
+  el.setAttribute('aria-selected', 'true');
   document.querySelectorAll('.talk').forEach(r => {
-    (r as HTMLElement).style.display = (type === 'all' || r.getAttribute('data-type') === type) ? '' : 'none';
+    r.style.display = (type === 'all' || r.getAttribute('data-type') === type) ? '' : 'none';
   });
   document.querySelectorAll('.year-group').forEach(g => {
-    const hasVisible = [...g.querySelectorAll('.talk')].some(r => (r as HTMLElement).style.display !== 'none');
-    (g as HTMLElement).style.display = hasVisible ? '' : 'none';
+    const hasVisible = [...g.querySelectorAll('.talk')].some(r => r.style.display !== 'none');
+    g.style.display = hasVisible ? '' : 'none';
   });
 }
 </script>
