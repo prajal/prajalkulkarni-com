@@ -214,6 +214,11 @@ p strong { color: var(--ink); }
 .pill:hover .pill__arr { color: var(--accent); }
 .pill--tool { border-color: color-mix(in srgb, var(--accent) 25%, var(--hair)); }
 .pill--tool:hover { background: var(--accent-soft); }
+.pill--cve {
+  font-family: var(--mono); font-size: .72rem; letter-spacing: 0.03em;
+  padding: 3px 9px; color: var(--faint);
+}
+.pill--cve:hover { color: var(--accent); }
 .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px; }
 .principle {
   display: block; border: 1px solid var(--hair); border-radius: 14px;

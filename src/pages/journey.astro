@@ -56,6 +56,16 @@ import { journey } from "@data/journey";
                     </div>
                   </div>
                 )}
+                {e.artifacts.cves && e.artifacts.cves.length > 0 && (
+                  <div class="artifacts-sub">
+                    <p class="artifacts-sub__lbl">CVEs — {e.artifacts.cves.length} advisories</p>
+                    <div class="artifacts-pills">
+                      {e.artifacts.cves.map(c => (
+                        <a class="pill pill--cve" href={c.href} target="_blank" rel="noopener">{c.id}</a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </>
           )}
