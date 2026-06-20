@@ -16,7 +16,7 @@ export const site = {
   companies: ["PayPal", "Flipkart", "Cleartrip", "Groww"],
   contact: {
     blurb:
-      "I'd genuinely love to hear from you — whether it's about security leadership, a speaking engagement, or just comparing notes on the work. I try to reply to everyone.",
+      "I'd genuinely love to hear from you — whether it's about security leadership, a speaking engagement, or about a security startup idea that you are cooking. I try to reply to everyone.",
     links: [
       { label: "LinkedIn", href: "https://www.linkedin.com/in/prajalkulkarni/" },
       { label: "GitHub", href: "https://github.com/prajalkulkarni" },
