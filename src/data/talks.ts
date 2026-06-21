@@ -11,6 +11,13 @@ export interface Talk {
 
 export const talks: Talk[] = [
   {
+    year: "2026",
+    title: "Zero Trust & Cloud Security Architecture: Securing the Perimeter-less Enterprise",
+    event: "VULNCON 2026",
+    type: "panel",
+    href: "https://vulncon.in/events/vulncon2026/cxo/zero-trust-cloud-security-architecture",
+  },
+  {
     year: "2025",
     title: "Black Hat Europe Review board — Financial Services Summit",
     event: "Black Hat Europe · Financial Services Summit",
