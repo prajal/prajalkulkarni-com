@@ -10,7 +10,15 @@ export interface FieldNote {
 }
 
 export const fieldNotes: FieldNote[] = [
+  
   {
+    date: "Jun 22, 2026",
+    topic: "supply-chain",
+    title: "Your critical vendors are part of your security team whether you like it or not.",
+    body: "Nobody can meaningfully audit every vendor in a modern ecosystem. The companies that try usually end up with spreadsheets full of questionnaires and very little understanding of actual risk.\n\nThe real challenge is identifying the vendors that hold sensitive data, operate critical systems, or have privileged access into your environment. I think of them as the extended family. Their resilience directly affects yours.\n\nInstead of spreading effort across hundreds of vendors, **invest deeply in the handful that matter.** Include them in resilience planning, incident discussions, and recovery exercises. Treat them less like suppliers and more like part of the operating model.\n\nYou don't need visibility into every vendor. **You need confidence in the ones that can hurt you.**",
+  },
+
+{
     date: "Jun 18, 2026",
     topic: "supply-chain",
     title: "Another npm compromise. The lesson isn't \u201Caudit more.\u201D",
