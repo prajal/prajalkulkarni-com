@@ -1,0 +1,43 @@
+/* Field Notes — short, opinionated takes on security events. Newest first.
+   `body` supports **bold** (rendered via inlineBold). Keep each under ~200 words.
+   topic drives the chip color/label (see field-notes.astro). */
+
+export interface FieldNote {
+  date: string;   // e.g. "Jun 18, 2026"
+  topic: 'supply-chain' | 'ai' | 'vuln' | 'privacy' | 'identity';
+  title: string;
+  body: string;
+}
+
+export const fieldNotes: FieldNote[] = [
+  {
+    date: "Jun 18, 2026",
+    topic: "supply-chain",
+    title: "Another npm compromise. The lesson isn't \u201Caudit more.\u201D",
+    body: "When a popular package ships a malicious post-install script, the reflex is to tell teams to audit dependencies harder. That doesn't scale — nobody reads 1,400 transitive packages. The real fix is boring: **pin versions, build in a sandbox with no network egress, and treat the registry as untrusted input.** Velocity doesn't have to drop. We made install steps egress-restricted by default and developers barely noticed. Defense should be a property of the pipeline, not a task on someone's plate.",
+  },
+  {
+    date: "Jun 11, 2026",
+    topic: "ai",
+    title: "Prompt injection is just input validation wearing a costume",
+    body: "Every week someone \u201Cdiscovers\u201D that an LLM agent can be tricked into exfiltrating data through a poisoned web page. We've seen this movie — it's SQL injection with vibes. The mistake is giving the model both untrusted content and privileged tools in the same context. **Treat model output as untrusted, scope tool permissions tightly, and put a human or a deterministic check in front of anything irreversible.** The interesting part isn't the jailbreak; it's that we keep handing agents production credentials and acting surprised.",
+  },
+  {
+    date: "Jun 4, 2026",
+    topic: "vuln",
+    title: "On the latest \u201Ccritical\u201D RCE everyone's patching",
+    body: "A CVSS 9.8 dropped this morning and my inbox is on fire. Before the fire drill: is the vulnerable component even reachable from the internet in your environment? Most of the time, **exposure — not severity — should drive your priority.** A 9.8 behind three layers of network policy can wait until Tuesday; a \u201Cmedium\u201D on your edge cannot. Severity scores are context-free by design. Your job is to add the context. Patch fast, but patch the right things first.",
+  },
+  {
+    date: "May 27, 2026",
+    topic: "privacy",
+    title: "The DPDP rules are a security mandate in disguise",
+    body: "People read India's data protection rules as a legal problem. Read them again as an engineer: you can't honor a deletion request if you don't know where the data lives, and you can't report a breach in time if you can't detect one. The companies that struggle won't be the ones with bad lawyers — **they'll be the ones without a data inventory and decent logging.** Compliance deadlines are, annoyingly, the best forcing function we have for the hygiene we should've done anyway.",
+  },
+  {
+    date: "May 20, 2026",
+    topic: "identity",
+    title: "\u201CWe had MFA\u201D is not the flex you think it is",
+    body: "Another breach post-mortem, another \u201Cbut we had MFA enabled.\u201D OTP and push MFA are phishable — attackers proxy the login in real time or fatigue users into approving. If the account guards anything that matters, the answer is **phishing-resistant factors: passkeys, hardware keys, device-bound credentials.** Yes, rollout is annoying. So is explaining to your board why the \u201CMFA\u201D you bragged about got relayed in ninety seconds. Pick the factor that matches the threat, not the one that's easiest to ship.",
+  },
+];
