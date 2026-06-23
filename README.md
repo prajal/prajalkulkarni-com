@@ -3,7 +3,7 @@
 A small, fast, content-first personal website for **Prajal Kulkarni** — security leader & CISO at Groww.
 Built with **Astro + TypeScript**, statically generated, zero database / CMS / backend / tracking.
 
-Five pages: **Home · Journey · Philosophy · Talks · Contact**.
+Six pages: **Home · Journey · Philosophy · Talks · Field Notes · Contact**.
 
 ---
 
@@ -27,7 +27,8 @@ astro/
 │  │  ├─ site.ts              # name, role, intro, companies, contact links
 │  │  ├─ journey.ts           # career entries (newest first)
 │  │  ├─ principles.ts        # philosophy principles (in order)
-│  │  └─ talks.ts             # talks/panels/podcasts (newest first)
+│  │  ├─ talks.ts             # talks/panels/podcasts (newest first)
+│  │  └─ fieldnotes.ts        # short security takes (newest first)
 │  ├─ lib/
 │  │  └─ format.ts            # tiny **bold** → <strong> helper
 │  ├─ components/
@@ -40,6 +41,7 @@ astro/
 │  │  ├─ journey.astro
 │  │  ├─ philosophy.astro
 │  │  ├─ talks.astro
+│  │  ├─ field-notes.astro
 │  │  └─ contact.astro
 │  └─ styles/
 │     └─ global.css           # the whole design system
@@ -81,6 +83,8 @@ You almost never need to touch a component — edit the data files:
   Numbered automatically in array order.
 - **Talks** → `src/data/talks.ts`
   Grouped by `year` automatically. Omit `href` for a non-linked item.
+- **Field Notes** → `src/data/fieldnotes.ts`
+  Add an object to the top of the `fieldNotes` array (newest first). `topic` must be one of: `supply-chain`, `ai`, `vuln`, `privacy`, `identity`. Body supports `**bold**`.
 
 To change the **headshot**, replace `public/prajal.png` (square image works best).
 To change **colours / type / spacing**, edit the CSS variables at the top of `src/styles/global.css`.
