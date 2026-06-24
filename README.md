@@ -1,6 +1,6 @@
 # prajalkulkarni.com
 
-A small, fast, content-first personal website for **Prajal Kulkarni** — security leader & CISO at Groww.
+A small, fast, content-first personal website for **Prajal Kulkarni**.
 Built with **Astro + TypeScript**, statically generated, zero database / CMS / backend / tracking.
 
 Six pages: **Home · Journey · Philosophy · Talks · Field Notes · Contact**.
@@ -90,48 +90,3 @@ To change the **headshot**, replace `public/prajal.png` (square image works best
 To change **colours / type / spacing**, edit the CSS variables at the top of `src/styles/global.css`.
 
 ---
-
-## Deploy to Cloudflare Pages
-
-This is a fully static site, so deployment is trivial.
-
-### Option A — Git (recommended)
-
-1. Push this repo to GitHub/GitLab.
-2. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**.
-3. Pick the repo and use these build settings:
-   - **Framework preset:** `Astro`
-   - **Build command:** `npm run build`
-   - **Build output directory:** `dist`
-   - **Root directory:** `astro` *(only if this folder is nested in the repo — omit if `astro/` is the repo root)*
-4. Deploy. Cloudflare gives you a `*.pages.dev` URL.
-
-### Option B — Direct upload (Wrangler CLI)
-
-```bash
-cd astro
-npm install
-npm run build
-npx wrangler pages deploy dist --project-name=prajalkulkarni
-```
-
-### Custom domain
-
-In your Pages project → **Custom domains → Set up a domain** → add `prajalkulkarni.com`
-and follow the DNS instructions (Cloudflare handles HTTPS automatically).
-
----
-
-## Notes / things to confirm
-
-- **Dates** for Flipkart (2014–2022) and Cleartrip (2022–2023) were inferred — adjust in `journey.ts` if needed.
-- **GitHub** link and **email** in `site.ts` are placeholders (`github.com/prajalkulkarni`, `hello@prajalkulkarni.com`) — update to the real ones.
-- A few **talk links** are filled where a public page exists; others have no `href` yet — add them when you have URLs.
-
----
-
-## Lighthouse
-
-Out of the box this should comfortably score 95+ across Performance, Accessibility,
-Best Practices, and SEO. The only network cost beyond HTML/CSS is the Google Fonts request —
-self-host Geist (e.g. via `@fontsource/geist-sans`) if you want to drop that too.
