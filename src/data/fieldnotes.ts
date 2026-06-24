@@ -10,15 +10,19 @@ export interface FieldNote {
 }
 
 export const fieldNotes: FieldNote[] = [
-  
+  {
+    date: "Jun 24, 2026",
+    topic: "ai",
+    title: "An AI agent with database keys is just a privileged insider you can't fire.",
+    body: "Google DeepMind published their AI Control Roadmap: a framework for securing autonomous agents in production. The core idea is borrowed from insider threat defense — assume the agent can fail, monitor what it does at runtime, and build hard stops before bad actions become irreversible.\n\nMost teams building AI agents focus on alignment, making sure the model understands the goal. **DeepMind's saying that's not enough. Once you give an agent credentials, API access, or decision authority, the security model flips.** It's no longer \"is the model safe?\" It's \"what happens when it isn't?\"\n\nYou wouldn't hand a human employee database keys without audit logs, approval workflows, and revocation. Why do we hand AI agents the same keys and hope training holds? **Defense needs to be a system property, not a bet on alignment.** In high-stakes domains — finance, healthcare — a misaligned agent isn't a research problem. It's a breach.",
+  },
   {
     date: "Jun 22, 2026",
     topic: "supply-chain",
     title: "Your critical vendors are part of your security team whether you like it or not.",
     body: "Nobody can meaningfully audit every vendor in a modern ecosystem. The companies that try usually end up with spreadsheets full of questionnaires and very little understanding of actual risk.\n\nThe real challenge is identifying the vendors that hold sensitive data, operate critical systems, or have privileged access into your environment. I think of them as the extended family. Their resilience directly affects yours.\n\nInstead of spreading effort across hundreds of vendors, **invest deeply in the handful that matter.** Include them in resilience planning, incident discussions, and recovery exercises. Treat them less like suppliers and more like part of the operating model.\n\nYou don't need visibility into every vendor. **You need confidence in the ones that can hurt you.**",
   },
-
-{
+  {
     date: "Jun 18, 2026",
     topic: "supply-chain",
     title: "Another npm compromise. The lesson isn't \u201Caudit more.\u201D",
