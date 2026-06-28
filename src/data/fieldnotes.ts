@@ -11,6 +11,12 @@ export interface FieldNote {
 
 export const fieldNotes: FieldNote[] = [
   {
+    date: "Jun 28, 2026",
+    topic: "supply-chain",
+    title: "A CVE advisory shouldn't require a human to figure out if you're affected.",
+    body: "A critical advisory drops. Someone pastes it in Slack. A dozen engineers start manually grepping repos. An hour later, you maybe have an answer.\n\nThis is not a people problem. It's a missing engine problem.\n\n**Ingest advisories from GitHub Advisory Database or OSV, cross-reference against your dependency inventory and SBOM, and surface affected services automatically.** The answer to \"are we affected?\" should exist before anyone hits the panic button.\n\nMost teams have the raw material — lock files, package manifests, code scanning pipelines. What they haven't done is wire it together. **Automated advisory detection doesn't kill the scramble. The absence of it does.**",
+  },
+  {
     date: "Jun 24, 2026",
     topic: "ai",
     title: "An AI agent with database keys is just a privileged insider you can't fire.",
