@@ -24,6 +24,17 @@ const chipLabel: Record<Talk['type'], string> = {
   training: 'Training',
   review:   'Review board',
 };
+
+// Filter tabs with live counts.
+const tabs: { f: string; label: string }[] = [
+  { f: 'all',      label: 'All' },
+  { f: 'talk',     label: 'Talks' },
+  { f: 'panel',    label: 'Panels' },
+  { f: 'podcast',  label: 'Podcasts' },
+  { f: 'training', label: 'Training' },
+  { f: 'review',   label: 'Review' },
+];
+const count = (f: string) => f === 'all' ? talks.length : talks.filter((t) => t.type === f).length;
 ---
 
 <Base title="Talks — Prajal Kulkarni" description="Talks, trainings, panels, review boards, and conversations by Prajal Kulkarni across the security community." current="talks">
@@ -34,12 +45,9 @@ const chipLabel: Record<Talk['type'], string> = {
 
     <div class="talks">
       <div class="talks-tabs" role="tablist" aria-label="Filter by type">
-        <button class="talks-tab active" onclick="filterTalks('all',this)" role="tab" aria-selected="true">All</button>
-        <button class="talks-tab" onclick="filterTalks('talk',this)" role="tab" aria-selected="false">Talks</button>
-        <button class="talks-tab" onclick="filterTalks('panel',this)" role="tab" aria-selected="false">Panels</button>
-        <button class="talks-tab" onclick="filterTalks('podcast',this)" role="tab" aria-selected="false">Podcasts</button>
-        <button class="talks-tab" onclick="filterTalks('training',this)" role="tab" aria-selected="false">Training</button>
-        <button class="talks-tab" onclick="filterTalks('review',this)" role="tab" aria-selected="false">Review</button>
+        {tabs.map((t, i) => (
+          <button class:list={["talks-tab", { active: i === 0 }]} onclick={`filterTalks('${t.f}',this)`} role="tab" aria-selected={i === 0 ? "true" : "false"}>{t.label} <span class="talks-tab__n">{count(t.f)}</span></button>
+        ))}
       </div>
       {groups.map((g) => (
         <div class="year-group">
@@ -87,4 +95,3 @@ function filterTalks(type, el) {
   });
 }
 </script>
-

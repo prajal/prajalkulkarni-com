@@ -257,23 +257,24 @@ p strong { color: var(--ink); }
 .chip--podcast  { border-color: #c9ead9; color: #1a7a4a; background: #f0faf4; }
 .chip--training { border-color: #e4d8fd; color: #6b3db8; background: #f7f2ff; }
 .chip--review   { border-color: #fde0e0; color: #b82020; background: #fff5f5; }
-/* ---------- talks filter tabs ---------- */
+/* ---------- talks filter tabs (editorial underline) ---------- */
 .talks-tabs {
-  display: flex; background: var(--hair-soft); border-radius: 10px;
-  padding: 3px; gap: 2px; margin-bottom: 28px; overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  display: flex; flex-wrap: nowrap; align-items: baseline; gap: 22px;
+  border-bottom: 1px solid var(--hair); padding-bottom: 12px; margin-bottom: 28px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
 }
 .talks-tab {
-  font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase;
-  padding: 7px 14px; border-radius: 8px; border: none; background: none;
-  cursor: pointer; color: var(--faint); white-space: nowrap;
-  transition: color .15s, background .15s, box-shadow .15s;
+  font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--faint); background: none; border: none;
+  padding: 0 0 12px; margin-bottom: -13px; cursor: pointer;
+  border-bottom: 2px solid transparent; white-space: nowrap;
+  display: inline-flex; align-items: baseline; gap: 5px;
+  transition: color .15s, border-color .15s;
 }
 .talks-tab:hover { color: var(--ink); }
-.talks-tab.active {
-  background: var(--bg); color: var(--ink);
-  box-shadow: 0 1px 3px rgba(0,0,0,.1);
-}
+.talks-tab__n { font-size: 10px; color: var(--faint); transition: color .15s; }
+.talks-tab.active { color: var(--ink); border-bottom-color: var(--accent); }
+.talks-tab.active .talks-tab__n { color: var(--accent); }
 
 .year-group { display: grid; grid-template-columns: 64px 1fr; gap: 8px; margin-bottom: 32px; }
 .year-group__year { font-family: var(--display); font-size: 1.55rem; font-weight: 600; color: var(--faint); padding-top: 12px; line-height: 1; }
