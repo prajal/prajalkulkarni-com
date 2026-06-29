@@ -103,6 +103,13 @@ export const talks: Talk[] = [
   },
   {
     year: "2018",
+    title: "The Evolution of Application Security in E-Commerce",
+    event: "Flipkart SlashN",
+    type: "talk",
+    href: "https://www.youtube.com/watch?v=sQD5aEBizxw",
+  },
+  {
+    year: "2018",
     title: "Astra — automated security testing for REST APIs",
     event: "Black Hat USA · Arsenal",
     type: "talk",
