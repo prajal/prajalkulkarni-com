@@ -12,6 +12,13 @@ export interface Talk {
 export const talks: Talk[] = [
   {
     year: "2026",
+    title: "Black Hat India Briefings Review Board",
+    event: "Black Hat India 2026",
+    type: "review",
+    href: "https://www.blackhat-india.com/briefings-review-board",
+  },
+  {
+    year: "2026",
     title: "Zero Trust & Cloud Security Architecture: Securing the Perimeter-less Enterprise",
     event: "VULNCON 2026",
     type: "panel",
@@ -122,7 +129,7 @@ export const talks: Talk[] = [
     type: "training",
     href: "https://nullcon.net/training/attack-monitoring-using-elasticsearch-logstash-kibana/",
   },
-{
+  {
     year: "2016",
     title: "Attack monitoring using ELK stack - NullBachaav",
     event: "Null Bachaav session ",
