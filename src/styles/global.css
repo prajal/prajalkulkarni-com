@@ -257,6 +257,7 @@ p strong { color: var(--ink); }
 .chip--podcast  { border-color: #c9ead9; color: #1a7a4a; background: #f0faf4; }
 .chip--training { border-color: #e4d8fd; color: #6b3db8; background: #f7f2ff; }
 .chip--review   { border-color: #fde0e0; color: #b82020; background: #fff5f5; }
+.chip--culture  { border-color: #c8eeee; color: #0e7070; background: #f0fafa; }
 /* ---------- talks filter tabs (editorial underline) ---------- */
 .talks-tabs {
   display: flex; flex-wrap: nowrap; align-items: baseline; gap: 22px;
