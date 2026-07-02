@@ -4,12 +4,18 @@
 
 export interface FieldNote {
   date: string;   // e.g. "Jun 18, 2026"
-  topic: 'supply-chain' | 'ai' | 'vuln' | 'privacy' | 'identity';
+  topic: 'supply-chain' | 'ai' | 'vuln' | 'privacy' | 'identity' | 'culture';
   title: string;
   body: string;
 }
 
 export const fieldNotes: FieldNote[] = [
+  {
+    date: "Jul 02, 2026",
+    topic: "culture",
+    title: "A false sense of security is worse than no security at all. Most tool-heavy teams have exactly that.",
+    body: "Every CISO gets asked the same question: what's the one thing that makes a company truly secure? The answer they're looking for is a tool, a framework, a vendor. It never is.\n\nTeams that buy every category-leading product and run quarterly pentests often have the weakest posture. Not because the tools don't work — they do. **Because tooling without the right security mindset is just expensive checkbox coverage.**\n\nThe security team's mindset is the real differentiator. How they think about threat models, how they respond when something breaks, whether they treat security as an operating principle or a compliance exercise.\n\n**You can't buy your way to a security culture.** The team that asks \"how would an attacker think about this?\" before shipping beats the team with a $10M security budget and no curiosity every single time.",
+  },
   {
     date: "Jun 28, 2026",
     topic: "supply-chain",
