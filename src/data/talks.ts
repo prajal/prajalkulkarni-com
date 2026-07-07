@@ -12,6 +12,13 @@ export interface Talk {
 export const talks: Talk[] = [
   {
     year: "2026",
+    title: "Black Hat India Summits Advisory Board",
+    event: "Black Hat India 2026",
+    type: "review",
+    href: "https://www.blackhat-india.com/summits-advisory-board",
+  },
+  {
+    year: "2026",
     title: "Black Hat India Briefings Review Board",
     event: "Black Hat India 2026",
     type: "review",
