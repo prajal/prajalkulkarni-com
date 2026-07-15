@@ -11,6 +11,12 @@ export interface FieldNote {
 
 export const fieldNotes: FieldNote[] = [
   {
+    date: "Jul 15, 2026",
+    topic: "ai",
+    title: "Your AI agent completed the task. You have no idea what else it did.",
+    body: "The governance conversation around AI has landed in the wrong place. Boardrooms are debating model bias and regulatory compliance. Security teams should be asking something simpler: what exactly did that agent do between receiving the instruction and returning the output?\n\nAgents don't just execute tasks. They make decisions, call APIs, access data, and chain actions — often without a meaningful audit trail. **Most organisations deploying agents today have no runtime visibility into what they're actually doing.** You shipped the capability. You assumed the guardrails.\n\nThis isn't a model problem. It's an observability problem. **An agent with no observable behaviour is just a privileged black box you've handed the keys to.**\n\nThe risk isn't AI coming for your job. It's already in your systems and nobody's watching.",
+  },
+  {
     date: "Jul 02, 2026",
     topic: "culture",
     title: "A false sense of security is worse than no security at all. Most tool-heavy teams have exactly that.",
