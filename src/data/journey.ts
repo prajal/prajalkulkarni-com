@@ -42,6 +42,7 @@ export const journey: JourneyEntry[] = [
         { label: "SecretLens", href: "https://github.com/Groww-OSS/SecretLens" },
       ],
       writing: [
+        { label: "Refusing the haystack: how Groww's cyber defence team scales detection and response", href: "https://tech.groww.in/refusing-the-haystack-how-growws-cyber-defence-team-scales-detection-and-response-aece5d7b92ae" },
         { label: "Securing at speed: scaling vulnerability management", href: "https://tech.groww.in/securing-at-speed-how-groww-scales-vulnerability-management-f2ddfb9841a5" },
         { label: "Beyond the checkbox: scaling product security across Groww's SDLC", href: "https://tech.groww.in/beyond-the-checkbox-scaling-product-security-across-growws-sdlc-e5cd3d70a3be" },
         { label: "Not just OWASP: deep dive into Groww's API security playbook", href: "https://tech.groww.in/not-just-owasp-deep-dive-into-growws-api-security-playbook-ab5e74ef1cb8" },
