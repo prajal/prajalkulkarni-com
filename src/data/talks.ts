@@ -26,6 +26,13 @@ export const talks: Talk[] = [
   },
   {
     year: "2026",
+    title: "CISO Circle Series Ep. 1 — Supply Chain Risk Management",
+    event: "Black Hat India · podcast",
+    type: "podcast",
+    href: "https://www.youtube.com/watch?v=cCSbTBfxmbA&t=19s",
+  },
+  {
+    year: "2026",
     title: "Zero Trust & Cloud Security Architecture: Securing the Perimeter-less Enterprise",
     event: "VULNCON 2026",
     type: "panel",
