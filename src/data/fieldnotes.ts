@@ -4,12 +4,18 @@
 
 export interface FieldNote {
   date: string;   // e.g. "Jun 18, 2026"
-  topic: 'supply-chain' | 'ai' | 'vuln' | 'privacy' | 'identity' | 'culture';
+  topic: 'supply-chain' | 'ai' | 'vuln' | 'privacy' | 'identity' | 'culture' | 'ecosystem';
   title: string;
   body: string;
 }
 
 export const fieldNotes: FieldNote[] = [
+  {
+    date: "Aug 18, 2026",
+    topic: "ecosystem",
+    title: "India went from buying security to building it. Black Hat just noticed.",
+    body: "For most of the 2000s, Indian enterprise security meant outsourced audits, compliance checklists, and imported tooling. The security function was something you bought, not something you built.\n\nThe startup wave changed that. When you're moving fast with your own product, your own data, and your own customers, you can't outsource the hard questions. Engineers who would have gone into infrastructure or product ended up in security — and they stayed curious.\n\n**Two decades of that mindset shift produced a generation of researchers who don't wait for CVEs to be handed to them.** They find them. They speak at DEF CON, Black Hat Asia, and NullCon. They open-source their tools.\n\n**Black Hat India isn't a gift to the ecosystem. It's the ecosystem getting its due.**",
+  },
   {
     date: "Jul 15, 2026",
     topic: "ai",
