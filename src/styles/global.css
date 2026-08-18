@@ -252,12 +252,13 @@ p strong { color: var(--ink); }
   border: 1px solid var(--hair); color: var(--faint); background: #f9f8f6;
   margin-top: 0; white-space: nowrap; flex-shrink: 0;
 }
-.chip--talk     { border-color: #fde8c8; color: #b85c00; background: #fff8f0; }
-.chip--panel    { border-color: #c8d9fd; color: #2f6df6; background: #f0f4ff; }
-.chip--podcast  { border-color: #c9ead9; color: #1a7a4a; background: #f0faf4; }
-.chip--training { border-color: #e4d8fd; color: #6b3db8; background: #f7f2ff; }
-.chip--review   { border-color: #fde0e0; color: #b82020; background: #fff5f5; }
-.chip--culture  { border-color: #c8eeee; color: #0e7070; background: #f0fafa; }
+.chip--talk      { border-color: #fde8c8; color: #b85c00; background: #fff8f0; }
+.chip--panel     { border-color: #c8d9fd; color: #2f6df6; background: #f0f4ff; }
+.chip--podcast   { border-color: #c9ead9; color: #1a7a4a; background: #f0faf4; }
+.chip--training  { border-color: #e4d8fd; color: #6b3db8; background: #f7f2ff; }
+.chip--review    { border-color: #fde0e0; color: #b82020; background: #fff5f5; }
+.chip--culture   { border-color: #c8eeee; color: #0e7070; background: #f0fafa; }
+.chip--ecosystem { border-color: #faecc8; color: #8a6200; background: #fdf8ee; }
 /* ---------- talks filter tabs (editorial underline) ---------- */
 .talks-tabs {
   display: flex; flex-wrap: nowrap; align-items: baseline; gap: 22px;
