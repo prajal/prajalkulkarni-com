@@ -12,6 +12,13 @@ export interface Talk {
 export const talks: Talk[] = [
   {
     year: "2026",
+    title: "In India's Fintech Boom, Security is the Foundation",
+    event: "Times of India · Times Techies",
+    type: "podcast",
+    href: "https://timesofindia.indiatimes.com/technology/times-techies/in-indias-fintech-boom-security-is-the-foundation/articleshow/133711908.cms",
+  },
+  {
+    year: "2026",
     title: "Black Hat India Summits Advisory Board",
     event: "Black Hat India 2026",
     type: "review",
